@@ -1,0 +1,88 @@
+#trio {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+#trio header h2 {
+    font-size: 2.7rem;
+}
+
+#trio .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#trio .cards .card {
+    padding: 2rem;
+    border-radius: 2rem;
+    background: #000000d0;
+}
+
+#trio .cards .card h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#trio .cards .card .topic {
+    background: #000000d1;
+    margin-block: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#trio .cards .card .topic h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+#trio .cards .card .topic:nth-child(1) h4 {
+    color: rgb(255, 210, 210);
+}
+
+#trio .cards .card .topic:nth-child(2) h4 {
+    color: rgb(209, 255, 209);
+}
+
+#trio .cards .card .topic p {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#trio .cards .card h5 {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#trio a button {
+    margin-top: 3rem;
+}
+
+@media (min-width: 1080px) {
+    section#trio header h2 {
+        font-size: 4rem;
+    }
+
+    section#trio .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#trio .cards .card {
+        padding: 3rem;
+        height: 100%;
+    }
+
+    section#trio .cards .card .topic {
+        height: 100%;
+    }
+    
+}
+

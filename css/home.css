@@ -1,0 +1,287 @@
+#home {
+  height: 95vh;
+  overflow: hidden;
+  background: #000017;
+  position: relative;
+  z-index: 25;
+
+  transition: all 200ms ease-in-out;
+  margin-bottom: 0;
+
+  margin-top: 4rem;
+}
+
+#home .wrapper {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
+
+#home .content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  padding-top: 10%;
+}
+
+#home .blush {
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(#ffffff53, transparent 50%);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+  top: -35rem;
+  left: -50rem;
+  opacity: 0.2;
+
+  animation: moveblush infinite 4s linear;
+}
+
+#home .blush.dois {
+  background: radial-gradient(#ffffff4c, transparent 50%);
+  top: initial;
+  left: initial;
+  bottom: -45rem;
+  right: -60rem;
+}
+
+#home .text {
+  position: relative;
+  z-index: 4;
+
+}
+
+#home span.span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 7px;
+  color: var(--secondy-color);
+}
+
+#home img.logo {
+  width: 10rem;
+  height: auto; 
+}
+
+#home h1 {
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 3rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  background: linear-gradient(155deg, #ffffff 50%, #aeaeae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home h1 span {
+  font-weight: 600;
+
+}
+
+#home p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#home .swiper {
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+#home .swiper img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+#home img.graficos {
+  height: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+}
+
+#home a button {
+  margin-top: 2rem;
+}
+
+.custom-shape-divider-bottom-1736960517 {
+  display: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 10;
+}
+
+.custom-shape-divider-bottom-1736960517 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+}
+
+.custom-shape-divider-bottom-1736960517 .shape-fill {
+  fill: var(--bg-green);
+}
+
+#home .topics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #home .topics .topic {
+  }
+
+  #home .topics .topic p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: .7rem;
+    border-radius: .3rem;
+
+    background: var(--gradient);
+  }
+
+  #home .swiper {
+    width: 100%;
+  }
+
+#home .swiper-button-next {
+    top: 50%;
+    color: #ffffff; 
+    transform: scale(.5);
+
+}
+  
+#home .swiper-button-prev {
+    top: 50%;
+    color: #ffffff; 
+    transform: scale(.5);
+
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1080px) {
+  header#home {
+    background: #000000;
+    justify-content: center;
+    position: relative;
+
+    height: 95vh;
+    z-index: 1;
+
+    border-radius: 0;
+    box-shadow: initial;
+  }
+
+  header#home .swiper {
+    argin-bottom: 0;
+  }
+
+  header#home img.logo {
+    height: auto; 
+    width: 12rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  header#home img.graficos {
+    height: auto; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: 3;
+  }
+
+  header#home .content {
+    text-align: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    gap: 8rem;
+    padding-top: 0%;
+  }
+
+  header#home .content .text {
+    grid-area: a;
+    margin-bottom: initial;
+
+    text-align: left;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  header#home span.span {
+    font-size: 1.8rem;
+    letter-spacing: 20px;
+  }
+
+  header#home .content h1 {
+    font-size: 5rem;
+    line-height: .9;
+
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  header#home .content p {
+    font-size: 1.6rem;
+  }
+
+  header#home a button { 
+    margin-top: 2rem;
+  }
+
+  header#home .topics {
+    justify-content: start;
+  }
+
+  header#home .topics .topic p {
+      font-size: 1.1rem;
+      padding: .8rem;
+      font-weight: 700;
+  }
+}
+
+@media (min-width: 1700px) {
+  header#home .content h1 {
+    font-size: 6rem;
+    line-height: .9;
+    padding-bottom: .5rem;
+    margin-bottom: 0;
+  }
+
+  header#home .content p {
+    font-size: 1.8rem;
+  }
+}

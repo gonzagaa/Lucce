@@ -1,0 +1,101 @@
+#navigationButton {
+    position: fixed;
+    z-index: 20;
+    bottom: 2rem;
+    width: 94%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    padding-block: 1.5rem;
+    border-radius: 8rem;
+
+    background: #000;
+
+    animation: nav 10s ease-in-out backwards;
+}
+
+#navigationButton .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#navigationButton img.logo {
+    width: 6rem;
+}
+
+#navigationButton a {
+    width: 100%;
+}
+
+#navigationButton a button {
+    width: 100%;
+    font-size: 1.4rem;
+    background: #1cbf58;
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+}
+
+#navigationButton a button:hover {
+}
+
+@media (min-width: 1080px) {
+    nav#navigationButton {
+        display: none;
+        
+        width: 27%;
+        left: initial;
+        right: 2%;
+        transform: translate(0, 0);   
+        transform: initial;
+        padding-block: 2rem;
+        bottom: initial;
+        top: 3rem;
+
+        animation: navDesktop 8s ease-in-out backwards;
+    }
+
+    nav#navigationButton img.logo {
+        width: 13rem;
+    }
+
+    nav#navigationButton a button {
+        font-size: 1.4rem;
+        padding: 1.5rem 2rem;
+    }
+}
+
+@keyframes nav {
+    0% {
+        display: none;
+        transform: translate(-50%, 2550%);
+    }
+
+    50% {
+        display: inherit;
+        transform: translate(-50%, 2550%);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes navDesktop {
+    0% {
+        display: none;
+        transform: translate(0, -500%);
+    }
+
+    50% {
+        display: inherit;
+        transform: translate(0, -500%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

@@ -1,0 +1,161 @@
+#praquem {
+    overflow: hidden;
+    position: relative;
+    padding-block: 8rem;
+}
+
+#praquem img.bg {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(.7);
+}
+
+#praquem .content {
+    position: relative;
+    z-index: 1;
+}
+
+#praquem header {
+    margin-bottom: 5rem;
+}
+
+#praquem header h2 {
+    background: linear-gradient(155deg, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+#praquem header p {
+    color: #fff;
+}
+
+#praquem .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#praquem .cards .card {
+    background: linear-gradient(to bottom, #ffffff10, #ffffff12);
+    border-radius: 1rem;
+    padding-inline: 5rem;
+    padding-block: 3rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+
+    position: relative;
+}
+
+#praquem .cards .card::before {
+    content: '';
+    position: absolute;
+    height: 30%;
+    width: 4px;
+    background: var(--bege);
+    top: -5%;
+    left: 7%;
+}
+
+#praquem .cards .card::after {
+    content: '';
+    position: absolute;
+    height: 20%;
+    width: 4px;
+    background: #fff;
+    top: -5%;
+    left: 5%;
+}
+
+#praquem .cards .card ion-icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #997D59;
+}
+
+#praquem .cards .card h3 {
+    color: #f8fdfb;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#praquem .cards .card h3 span {
+    font-weight: 700;
+}
+
+.custom-shape-divider-top-1736976335 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+.custom-shape-divider-top-1736976335 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.custom-shape-divider-top-1736976335 .shape-fill {
+    fill: #fff;
+}
+
+.custom-shape-divider-bottom-1736960517 {
+  display: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 10;
+}
+
+.custom-shape-divider-bottom-1736960517 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+}
+
+.custom-shape-divider-bottom-1736960517 .shape-fill {
+  fill: #fff;
+}
+
+@media (min-width: 1080px) {
+    section#praquem {
+        padding-block: 8rem;
+    }
+    section#praquem header {
+        padding-inline: 20%;
+    }
+
+    section#praquem header h2 {
+        font-size: 4rem;
+    }
+
+    section#praquem .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    section#praquem .cards .card h3 {
+        font-size: 2rem;
+    }
+}
