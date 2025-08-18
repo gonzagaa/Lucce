@@ -69,6 +69,44 @@ if (larguraDaTela < 800) {
     });
 }
 
+if (larguraDaTela < 800) {
+  var swiper6 = new Swiper(".mySwiper6", {
+      grabCursor: true,
+      autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      spaceBetween: 5,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+} else {
+  var swiper6 = new Swiper(".mySwiper6", {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      loop: true,
+      grabCursor: true,
+      autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+}
+
 
 
 

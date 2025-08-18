@@ -75,7 +75,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 
-  background: linear-gradient(155deg, #ffffff 50%, #aeaeae);
+  background: linear-gradient(155deg, #000000 50%, #2d1e00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -88,7 +88,7 @@
 #home p {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #000000;
 }
 
 #home .swiper {
@@ -99,6 +99,7 @@
 #home .swiper img {
   width: 100%;
   border-radius: 2rem;
+  background: #0000000e;
 }
 
 #home img.graficos {
@@ -168,14 +169,14 @@
 
 #home .swiper-button-next {
     top: 50%;
-    color: #ffffff; 
+    color: #000000; 
     transform: scale(.5);
 
 }
   
 #home .swiper-button-prev {
     top: 50%;
-    color: #ffffff; 
+    color: #000000; 
     transform: scale(.5);
 
 }

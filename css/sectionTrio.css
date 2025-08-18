@@ -9,60 +9,104 @@
 }
 
 #trio .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 #trio .cards .card {
     padding: 2rem;
     border-radius: 2rem;
-    background: #000000d0;
+    background: #d5d5d5d0;
+
+    height: 100%;
+
 }
 
 #trio .cards .card h3 {
     font-size: 2rem;
-    color: #fff;
+    color: #000000;
     margin-bottom: 2rem;
 }
 
 #trio .cards .card .topic {
-    background: #000000d1;
+    background: #b1b1b163;
     margin-block: 1rem;
     padding: 2rem;
     border-radius: 1rem;
+
+    min-height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #trio .cards .card .topic h4 {
-    color: #fff;
+    color: #000000;
     margin-bottom: 1rem;
     font-size: 1.6rem;
 }
 
 #trio .cards .card .topic:nth-child(1) h4 {
-    color: rgb(255, 210, 210);
+    color: rgb(166, 0, 0);
 }
 
 #trio .cards .card .topic:nth-child(2) h4 {
-    color: rgb(209, 255, 209);
+    color: rgb(0, 141, 0);
 }
 
 #trio .cards .card .topic p {
-    color: #fff;
+    color: #000000;
     font-size: 1.4rem;
 }
 
 #trio .cards .card h5 {
-    color: #fff;
+    color: #000000;
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    padding: 1rem;
+}
+
+#trio .cards .card:nth-child(1) h5 {
+    padding: 1rem;
+}
+
+#trio .cards .card:nth-child(3) h5 {
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
 }
 
 #trio a button {
-    margin-top: 3rem;
+    margin-top: 2rem;
+}
+
+#trio .swiper-pagination-bullet {
+    background-color: #51515129; 
+    opacity: 1; 
+    width: 13px;
+    height: 13px;
+  }
+  
+#trio .swiper-pagination-bullet-active {
+    background-color: #2F3349; 
+}
+
+body section#trio .wrapper .swiper.mySwiper6 {
+    overflow: inherit;
+}
+
+#trio .swiper-button-next {
+    top: 45%;
+    color: #000000; 
+    transform: scale(.5);
+}
+  
+#trio .swiper-button-prev {
+    top: 45%;
+    color: #000000; 
+    transform: scale(.5);
 }
 
 @media (min-width: 1080px) {
@@ -73,6 +117,7 @@
     section#trio .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
     }
 
     section#trio .cards .card {

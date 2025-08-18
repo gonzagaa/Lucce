@@ -1,6 +1,8 @@
 #author {
     background: #0c0c0c;
     padding-block: 2rem;
+
+    padding-bottom: 12rem;
 }
 
 #author .content {
@@ -42,6 +44,9 @@
 }
 
 @media (min-width: 1080px) {
+    #author {
+        padding-bottom: 2rem;
+    }
     #author .content {
         flex-direction: row;
         justify-content: space-between;
