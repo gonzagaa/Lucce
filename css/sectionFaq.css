@@ -133,6 +133,11 @@ summary::-webkit-details-marker {
     font-weight: 400;
 }
 
+#faq details a {
+    color: rgb(84, 247, 87);
+    font-weight: 700;
+}
+
 #faq a button {
     margin-top: 3rem;
 }
