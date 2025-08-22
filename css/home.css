@@ -85,6 +85,13 @@
 
 }
 
+#home h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
 #home p {
   font-size: 1.6rem;
   font-weight: 400;
