@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css?v=2">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -40,6 +40,16 @@
 
 </head>
 <body id="body" class="smooth-scroll-wrapper">
+    <div class="Popup-overlay" id="popupOverlay">
+        <div class="Popup-content" id="popupContent">
+        <button class="Popup-close" id="popupClose">&times;</button>
+        <a href="#">
+          <img src="./assets/popup.avif" alt="Imagem do Popup">
+          <a href="https://wa.link/dczxcq"><button class="icon">Clique aqui para garantir</button></a>
+        </a>
+      </div>
+  </div>
+
     <div id="tarja">
         <p><span>Já tem um orçamento?</span> Talvez podemos cobrir. </p>
     </div>
@@ -62,7 +72,7 @@
             <div class="content">
                 <div class="text">
                     <img data-aos="fade-up-right" class="logo" src="./assets/logo preta.png" alt="">
-                    <h4>Loja de iluminação em Goiânia</h4>
+                    <h4 data-aos="fade-up-right">Loja de iluminação em Goiânia</h4>
                     <h1 data-aos="fade-up-right">Iluminação de alto padrão com entrega em tempo recorde</h1>
                     <p data-aos="fade-up-right">Tudo de iluminação, sem
                         atrasos, sem gambiarra, sem dor de cabeça.</p>
@@ -508,7 +518,7 @@
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script.js?v=2"></script>
 
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <script>

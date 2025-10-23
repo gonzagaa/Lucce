@@ -107,7 +107,54 @@ if (larguraDaTela < 800) {
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.getElementById("popupOverlay");
+  const content = document.getElementById("popupContent");
+  const closeBtn = document.getElementById("popupClose");
 
+  // Mostrar o popup após 2s
+  setTimeout(() => {
+    overlay.classList.add("active");
+    content.classList.add("active");
+  }, 2000);
+
+  // Fechar com botão X
+  closeBtn.addEventListener("click", () => {
+    closePopup();
+  });
+
+  // Fechar ao clicar fora do conteúdo (na overlay)
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closePopup();
+  });
+
+  // Fechar ao clicar em QUALQUER link dentro do popup (ex.: <a href="#plan">...</a>)
+  content.addEventListener("click", (e) => {
+    const anchor = e.target.closest("a");
+    if (anchor) {
+      // fecha instantaneamente para não atrapalhar o scroll até a âncora
+      closePopup({ instant: true });
+      // não damos preventDefault: o navegador segue o link normalmente
+    }
+  });
+
+  function closePopup(opts = {}) {
+    const { instant = false } = opts;
+    content.classList.remove("active");
+
+    if (instant) {
+      overlay.classList.remove("active");
+      overlay.style.opacity = "";
+      return;
+    }
+
+    overlay.style.opacity = "1";
+    setTimeout(() => {
+      overlay.classList.remove("active");
+      overlay.style.opacity = "";
+    }, 300); // mesmo tempo da transição no CSS
+  }
+});
 
 
 
