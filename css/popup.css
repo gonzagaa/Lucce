@@ -22,7 +22,7 @@
   position: relative;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .Popup-close {
@@ -50,15 +50,41 @@
     width: 100%;
 }
 
+.Popup-content a {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+}
+
 .Popup-content a button {
   margin-top: -.5rem;
   padding: 1.5rem 2rem;
   border-radius: 0 0 1.5rem 1.5rem;
 }
 
+.Popup-content header {
+  background: #fff;
+  padding: 3rem;
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
+
+.Popup-content header h2 {
+  font-size: 2rem;
+}
+
+.Popup-content header p {
+  font-size: 1.2rem;
+}
+
+.Popup-content .logo {
+  width: 25rem;
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 768px) {
     .Popup-content {
-        max-width: 50%;
+        max-width: 70%;
     }
 
     
@@ -66,7 +92,19 @@
 
 @media (min-width: 1080px) {
     .Popup-content {
-        max-width: 21%;
+        max-width: 30%;
+    }
+
+    .Popup-content header {
+      padding: 2rem;
+    }
+
+    .Popup-content header img.logo {
+      width: 20rem;
+    }
+
+    .Popup-content header h2 {
+      font-size: 1.6rem;
     }
 
     .Popup-close {
