@@ -1,6 +1,5 @@
 #tarja {
     overflow: hidden;
-    padding: 1.5rem;
     background: var(--bege);
     color: #fff;
     position: fixed;
@@ -15,8 +14,20 @@
     font-size: 1.2rem;
     text-align: center;
     color: #fff;
+
+    padding-block: 1rem;
 }
 
 #tarja p span {
     font-weight: 700;
+}
+
+#tarja .black {
+    background-color: #000;
+    padding: 0.5rem;
+}
+
+#tarja .black p {
+    font-size: 1.4rem;
+    padding-inline: 10%;
 }
