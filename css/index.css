@@ -1,5 +1,5 @@
 @import './global.css';
-@import './home.css';
+@import './home.css?v=5dasd';
 @import './sectionInicio.css';
 @import './sectionProdutos.css';
 @import './sectionPraquem.css';
@@ -11,4 +11,5 @@
 @import './author.css';
 @import './tarja.css?v=5';
 @import './popup.css';
+@import './modalProdutos.css?v=5dasd';
 

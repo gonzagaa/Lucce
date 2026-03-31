@@ -156,5 +156,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+const lightbox = document.getElementById("imageLightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
 
+// pega todas as imagens dos dois carrosseis
+const swiperImages = document.querySelectorAll(".mySwiper4 .card img, .mySwiper5 .card img");
 
+swiperImages.forEach((img) => {
+  img.addEventListener("click", () => {
+    lightboxImage.src = img.src;
+    lightboxImage.alt = img.alt || "Imagem ampliada";
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove("active");
+  lightboxImage.src = "";
+  document.body.style.overflow = "";
+}
+
+lightboxClose.addEventListener("click", closeLightbox);
+
+// fecha clicando no fundo escuro
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+// fecha com ESC
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && lightbox.classList.contains("active")) {
+    closeLightbox();
+  }
+});

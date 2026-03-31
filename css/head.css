@@ -7,7 +7,7 @@ header {
 }
 
 header h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 1.1;
     background: linear-gradient(155deg, #000000, #000000);
@@ -39,7 +39,7 @@ header p span {
     }
 
     header h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     header p {
