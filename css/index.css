@@ -1,7 +1,7 @@
 @import './global.css';
 @import './home.css?v=5dasd';
 @import './sectionInicio.css';
-@import './sectionProdutos.css';
+@import './sectionProdutos.css?v=5dasd';
 @import './sectionPraquem.css';
 @import './sectionTrio.css';
 @import './sectionFaq.css';
